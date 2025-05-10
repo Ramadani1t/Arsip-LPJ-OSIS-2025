@@ -210,8 +210,12 @@
         </div>
         
         <footer class="copyright">
-            <p>&copy; <span id="tahunSekarang"></span> OSIS SMK PERMATA BANGSA X Rmdz. With Gemini AI</p>
-        </footer>
+    <p>&copy; <span id="tahunSekarang"></span> 
+        <a href="https://github.com/Ramadani1t/Arsip-LPJ-OSIS-2025" target="_blank" rel="noopener noreferrer" class="footer-link">
+            OSIS SMK PERMATA BANGSA X Rmdz. With Gemini AI
+        </a>
+    </p>
+</footer>
 
     </div> <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="previewModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -276,7 +280,7 @@
         function setupDataTable(tableId, jsonSrcArrayName, filterSelectId, columnsConfig) {
             const table = $('#' + tableId).DataTable({
                 "ajax": {
-                    "url": "data.json",
+                    "url": "src/data.json",
                     "dataSrc": jsonSrcArrayName
                 },
                 "columns": columnsConfig,
